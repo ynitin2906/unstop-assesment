@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: conic-gradient(
+    #553c9a 0%,
+    #553c9a 33%,
+    #ee4b2b 33%,
+    #ee4b2b 66%,
+    #00c2cb 66%,
+    #00c2cb 99%
+  );
+  width: 100vw;
+}
+h1 {
+  font-weight: 600;
+  background-image: linear-gradient(to left, #321a72, #393fec);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.hr {
+  width: 2px;
+  height: 80vh;
+  background-color: white;
+}
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://wallpapercave.com/wp/sNNfQvo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  overflow: hidden;
+}
+.Container {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  align-items: center;
+}
+#seats {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: -0.5px -0.5px 0.5px rgb(204, 202, 202);
+
+  background-color: white;
+}
+
+.seat.booked {
+  color: white;
+  font-weight: 700;
+
+  /* background-color:#20BF7A; */
+  background-color: rgb(232, 99, 99);
+}
+
+.form {
+  box-shadow: -3px -3px 3px rgb(204, 202, 202);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #72c9e6;
+  padding: 20px;
+  border-radius: 20px;
+}
+input {
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 8px 8px 8px rgb(172, 168, 168),
+    inset -8px -8px 8px rgb(230, 225, 225);
+}
+.indentify {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 30px;
+}
+.err {
+  color: red;
+}
+.bookedSeat {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+
+  background-color: rgb(232, 99, 99);
+}
+.available {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: white;
+}
+button {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #00b9f5;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 18px;
+  border: 1px solid;
+}
+
+.show {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .App {
+    display: block;
+  }
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .hr {
+    width: 500px;
+    height: auto;
+    background-color: white;
+  }
+  .seat-container {
+    position: relative;
+  }
+}
